@@ -151,10 +151,11 @@ Edit your bitcoin.conf
 
 copy paste this:
 
-`server=1
+``server=1
 rpcuser=user
 rpcpassword=pass
-rpcallowip=127.0.0.1`
+rpcallowip=127.0.0.1
+``
 
 
 ctlr+x then y then enter
