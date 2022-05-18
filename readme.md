@@ -149,7 +149,7 @@ Edit your bitcoin.conf
 
 `cd $HOME/.bitcoin/; nano bitcoin.conf`
 
-copy paste this:
+add the following lines
 
 ```
 server=1
