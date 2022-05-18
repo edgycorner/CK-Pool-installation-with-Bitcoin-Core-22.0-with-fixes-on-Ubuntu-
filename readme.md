@@ -169,10 +169,11 @@ we will set up a notifier script, as required for ckpool
 `sudo nano /usr/bin/notify.sh`
 
 Copy paste this
-`
+
+```
 #!/bin/bash
 /usr/bin/notifier -s /opt
-`
+```
 
 ctrl+x then press y then enter
 
