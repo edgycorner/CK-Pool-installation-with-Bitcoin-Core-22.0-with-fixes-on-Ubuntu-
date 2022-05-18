@@ -215,9 +215,12 @@ Edit upstream url too, with localhost:3336
 
 "upstream" : "localhost:3336"
 
+Make sure to edit btc address in the config file, to match yours :) 
+
+
 
 **Step 19:**
 
 Time to turn on the pool
 
-`sudo ckpool --btcaddress 1edgym1sR5wLyhiziT8nk5spF1MUWAJcA --name new -L`
+`sudo ckpool -L`
