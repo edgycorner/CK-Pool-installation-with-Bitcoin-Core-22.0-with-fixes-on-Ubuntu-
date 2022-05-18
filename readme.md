@@ -84,10 +84,12 @@ Search for "JSON failed to decode GBT", you can search with ctrl+w in nano edito
 
 We just have to replace three lines of code, which are
 
-`if (unlikely(!previousblockhash || !target || !version || !curtime || !bits || !coinbase_aux || !flags)) {
+`
+if (unlikely(!previousblockhash || !target || !version || !curtime || !bits || !coinbase_aux || !flags)) {
  		LOGERR("JSON failed to decode GBT %s %s %d %d %s %s", previousblockhash, target, version, curtime, bits, flags);		
  		goto out;
  	}
+	
 	`
 	
 with the following:
