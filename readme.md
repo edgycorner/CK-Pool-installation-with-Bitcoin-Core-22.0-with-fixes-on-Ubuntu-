@@ -5,6 +5,7 @@
 **Step 2:**
 
 Installing git, build-essentials and yasm
+
 `sudo apt install git build-essential yasm sudo libtool`
  
 Enter y/yes whenever prompted for response
