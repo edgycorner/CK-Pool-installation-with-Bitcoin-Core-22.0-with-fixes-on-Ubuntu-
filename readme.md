@@ -147,7 +147,7 @@ We will begin with stopping already running bitcoind
 
 Edit your bitcoin.conf
 
-`cd $HOME/.bitcoin/; sudo rm bitcoin.conf; nano bitcoin.conf`
+`cd $HOME/.bitcoin/; nano bitcoin.conf`
 
 copy paste this:
 
