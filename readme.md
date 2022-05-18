@@ -53,6 +53,7 @@ Clone the ckpool repo with this command:
 *if you get an error saying git not found or installed, run `sudo apt-get install git` and then run the above command
 
 **Step 9:**
+
 move into ckpool directory with following command
 `cd master`
 
@@ -155,14 +156,21 @@ it should look like this
 
 
 "serverurl" : [
+
         "localhost:3333"
 ],
+
 "nodeserver" : [
+
         "localhost:3335"
+	
 ],
 "trusted" : [
+
         "localhost:3336"
+	
 ]
+
 
 
 Edit upstream url too, with localhost:3336
