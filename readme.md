@@ -3,6 +3,7 @@
 `sudo apt-get update`
 
 **Step 2:**
+
 Installing git, build-essentials and yasm
 `sudo apt install git build-essential yasm sudo libtool`
  
@@ -27,15 +28,18 @@ Once it's downloaded, we will extract the file with following command:
 
 
 **Step 5:**
-move into the extracted directory
+
+Move into the extracted directory
 `cd bitcoin-22.0`
 
 
 **Step 6:**
+
 Move into binary folder and install bitcoin core
 `cd bin;sudo install -m 0755 -o root -g root -t /usr/local/bin * `
 
 **Step 7:**
+
 We will start bitcoin in daemon mode and let it sync
 `bitcoind -daemon --prune=550 --dbcache=1000`
 Your node should start running in prune mode(to save space this mode keeps on removing raw data of old blocks which are frivolous), and it will sync all previous blocks.
@@ -43,6 +47,7 @@ You can track the progress by using "bitcoin-cli getblockcount"
 Once it reaches the latest block(check https://www.blockchain.com/explorer for latest block height), continue to step 8 
 
 **Step 8:**
+
 We will proceed with the installation of CK pool
 
 
@@ -52,10 +57,12 @@ Clone the ckpool repo with this command:
 
 *if you get an error saying git not found or installed, run `sudo apt-get install git` and then run the above command
 
+
 **Step 9:**
 
 move into ckpool directory with following command
 `cd master`
+
 
 **Step 10:**
 
@@ -93,10 +100,12 @@ Configue the package
 
 `autoreconf -i`
 
+
 **Step 12:**
 Time to build
 
 `sudo  ./autogen.sh; sudo ./configure; sudo make`
+
 
 **Step 13:**
 
@@ -114,6 +123,7 @@ We will begin with stopping already running bitcoind
 
 
 **Step 15:**
+
 Edit your bitcoin.conf
 
 `cd $HOME/.bitcoin/; sudo rm bitcoin.conf; nano bitcoin.conf`
@@ -142,6 +152,7 @@ ctrl+x then press y then enter
 
 
 **Step 17:**
+
 Start bitcoind again
 
 `bitcoind -daemon -blocknotify=/usr/bin/notify.sh --prune=550 --dbcache=1000`
@@ -176,6 +187,7 @@ it should look like this
 Edit upstream url too, with localhost:3336
 
 "upstream" : "localhost:3336"
+
 
 **Step 19:**
 
