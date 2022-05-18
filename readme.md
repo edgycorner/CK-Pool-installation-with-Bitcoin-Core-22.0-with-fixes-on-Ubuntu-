@@ -189,7 +189,7 @@ Edit ckpool.conf to replace serverurl, nodeserver, trusted with "localhost:3336"
 
 it should look like this
 
-
+``
 "serverurl" : [
 
         "localhost:3333"
@@ -206,7 +206,7 @@ it should look like this
 	
 ]
 
-
+``
 
 Edit upstream url too, with localhost:3336
 
